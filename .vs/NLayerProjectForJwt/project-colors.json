@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f4681d35-c311-41c2-b1b2-58e50c495727": {
+      "ProjectGuid": "f4681d35-c311-41c2-b1b2-58e50c495727",
+      "DisplayName": "NLayerProjectForJwt.API",
+      "ColorIndex": 0
+    },
+    "1b77bc89-6bba-41f8-9f40-9fdec061eebd": {
+      "ProjectGuid": "1b77bc89-6bba-41f8-9f40-9fdec061eebd",
+      "DisplayName": "NLayerProjectForJwt.Core",
+      "ColorIndex": 1
+    },
+    "0079b3d1-1a23-42b5-9f1a-f36b2bbd9961": {
+      "ProjectGuid": "0079b3d1-1a23-42b5-9f1a-f36b2bbd9961",
+      "DisplayName": "NLayerProjectForJwt.Data",
+      "ColorIndex": 2
+    },
+    "6697d46b-a25e-4362-be2e-a35101947006": {
+      "ProjectGuid": "6697d46b-a25e-4362-be2e-a35101947006",
+      "DisplayName": "NLayerProjectForJwt.Service",
+      "ColorIndex": 3
+    },
+    "c3bd17a5-e158-42f2-a258-7645be1d92b6": {
+      "ProjectGuid": "c3bd17a5-e158-42f2-a258-7645be1d92b6",
+      "DisplayName": "MiniApp1.API",
+      "ColorIndex": 4
+    },
+    "458b6602-5719-44ff-b2b8-80b93c0f11a2": {
+      "ProjectGuid": "458b6602-5719-44ff-b2b8-80b93c0f11a2",
+      "DisplayName": "MiniApp2.API",
+      "ColorIndex": 5
+    },
+    "19e4ff57-18a5-4bb6-8545-f1df996c051c": {
+      "ProjectGuid": "19e4ff57-18a5-4bb6-8545-f1df996c051c",
+      "DisplayName": "MiniApp3.API",
+      "ColorIndex": 6
+    },
+    "0a470c11-d668-4858-8daf-2e9f468d3114": {
+      "ProjectGuid": "0a470c11-d668-4858-8daf-2e9f468d3114",
+      "DisplayName": "SharedLibrary",
+      "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 8
+}
