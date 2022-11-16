@@ -1,9 +1,8 @@
-﻿using System.Linq;
-using System.Security.Claims;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SharedLibrary.UserInfo;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 
 namespace MiniApp2.API.Controllers
 {
@@ -12,13 +11,19 @@ namespace MiniApp2.API.Controllers
     [Authorize]
     public class InvoicesController : ControllerBase
     {
+        private readonly IUserSession _userSession;
+
+        public InvoicesController(IUserSession userSession)
+        {
+            _userSession = userSession;
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetInvoices()
         {
             var userName = HttpContext.User.Identity?.Name;
-            var userId = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 
-            return Ok($" invoices işlemleri =>  user name : {userName}  |  userId : {userId}");
+            return Ok($" invoices işlemleri =>  user name : {userName}  |  userId : {_userSession.GetUserId}");
         }
     }
 }

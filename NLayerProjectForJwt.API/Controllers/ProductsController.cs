@@ -1,9 +1,8 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLayerProjectForJwt.Core.Dtos.Product;
 using NLayerProjectForJwt.Core.Services;
+using System.Threading.Tasks;
 
 namespace NLayerProjectForJwt.API.Controllers
 {

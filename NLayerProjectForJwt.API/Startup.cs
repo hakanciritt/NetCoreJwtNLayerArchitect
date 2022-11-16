@@ -23,6 +23,7 @@ using NLayerProjectForJwt.Data.UnitOfWork;
 using NLayerProjectForJwt.Service.Services;
 using SharedLibrary.Configuration;
 using SharedLibrary.Extensions;
+using SharedLibrary.UserInfo;
 
 namespace NLayerProjectForJwt.API
 {
@@ -43,6 +44,7 @@ namespace NLayerProjectForJwt.API
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUserSession, UserSession>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();

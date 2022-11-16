@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using SharedLibrary.Configuration;
 using SharedLibrary.Extensions;
+using SharedLibrary.UserInfo;
 
 namespace MiniApp3.API
 {
@@ -21,6 +22,7 @@ namespace MiniApp3.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IUserSession, UserSession>();
 
             services.Configure<CustomTokenOptions>(Configuration.GetSection("TokenOption"));
             var tokenOptions = Configuration.GetSection("TokenOption").Get<CustomTokenOptions>();
