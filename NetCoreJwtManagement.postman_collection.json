@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "3b731deb-e91c-4ea3-aad3-e1e349ac5f48",
+		"name": "NetCoreJwtManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjY3ZTVhMjI1LTZmNGItNDUyMi1iNWQwLWRiYWEwYTM4NWMzZSIsImVtYWlsIjoiaGFrYW5jaXJpdEBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaGFrYW5jaXJpdHQiLCJhdWQiOlsid3d3LmF1dGhzZXJ2ZXIuY29tIiwid3d3Lm1pbmlhcGkxLmNvbSIsInd3dy5taW5pYXBpMiIsInd3dy5taW5pYXBpMy5jb20iXSwibmJmIjoxNjY4NjI3MTI4LCJleHAiOjE2Njg2MjcxODgsImlzcyI6Ind3dy5hdXRoc2VydmVyLmNvbSJ9.8eqPtFUk3s7j0Gcf29qAX3W2Y471IclhCtD-4vbIzzs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://localhost:44378/api/Products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\",\r\n  \"price\": 0,\r\n  \"userId\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44378/api/Products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\",\r\n  \"price\": 0,\r\n  \"userId\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44378/api/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjY3ZTVhMjI1LTZmNGItNDUyMi1iNWQwLWRiYWEwYTM4NWMzZSIsImVtYWlsIjoiaGFrYW5jaXJpdEBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaGFrYW5jaXJpdHQiLCJhdWQiOlsid3d3LmF1dGhzZXJ2ZXIuY29tIiwid3d3Lm1pbmlhcGkxLmNvbSIsInd3dy5taW5pYXBpMiIsInd3dy5taW5pYXBpMy5jb20iXSwibmJmIjoxNjY4NjI4MTQ4LCJleHAiOjE2Njg2MjgyMDgsImlzcyI6Ind3dy5hdXRoc2VydmVyLmNvbSJ9.EtR9J00mY6dfFG7jDql9K_fMN2CYKDedeQrQMutnFA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44378/api/Products/10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Products",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44378/api/Products/10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Products",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mini Api 1",
+			"item": [
+				{
+					"name": "Get Stocks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjY3ZTVhMjI1LTZmNGItNDUyMi1iNWQwLWRiYWEwYTM4NWMzZSIsImVtYWlsIjoiaGFrYW5jaXJpdEBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaGFrYW5jaXJpdHQiLCJhdWQiOlsid3d3LmF1dGhzZXJ2ZXIuY29tIiwid3d3Lm1pbmlhcGkxLmNvbSIsInd3dy5taW5pYXBpMiIsInd3dy5taW5pYXBpMy5jb20iXSwibmJmIjoxNjY4NjI3NzczLCJleHAiOjE2Njg2Mjc4MzMsImlzcyI6Ind3dy5hdXRoc2VydmVyLmNvbSJ9.74HnRXV3kiSjqqjP9SOuHA2u1xdvtxqCv7d_d8JGXtU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44305/api/stocks",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44305",
+							"path": [
+								"api",
+								"stocks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mini Api 2",
+			"item": [
+				{
+					"name": "Get Invoices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjY3ZTVhMjI1LTZmNGItNDUyMi1iNWQwLWRiYWEwYTM4NWMzZSIsImVtYWlsIjoiaGFrYW5jaXJpdEBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaGFrYW5jaXJpdHQiLCJhdWQiOlsid3d3LmF1dGhzZXJ2ZXIuY29tIiwid3d3Lm1pbmlhcGkxLmNvbSIsInd3dy5taW5pYXBpMiIsInd3dy5taW5pYXBpMy5jb20iXSwibmJmIjoxNjY4NjI3NzczLCJleHAiOjE2Njg2Mjc4MzMsImlzcyI6Ind3dy5hdXRoc2VydmVyLmNvbSJ9.74HnRXV3kiSjqqjP9SOuHA2u1xdvtxqCv7d_d8JGXtU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44385/api/Invoices",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44385",
+							"path": [
+								"api",
+								"Invoices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mini Api 3",
+			"item": [
+				{
+					"name": "Get Values",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjY3ZTVhMjI1LTZmNGItNDUyMi1iNWQwLWRiYWEwYTM4NWMzZSIsImVtYWlsIjoiaGFrYW5jaXJpdEBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaGFrYW5jaXJpdHQiLCJhdWQiOlsid3d3LmF1dGhzZXJ2ZXIuY29tIiwid3d3Lm1pbmlhcGkxLmNvbSIsInd3dy5taW5pYXBpMiIsInd3dy5taW5pYXBpMy5jb20iXSwibmJmIjoxNjY4NjI3NzczLCJleHAiOjE2Njg2Mjc4MzMsImlzcyI6Ind3dy5hdXRoc2VydmVyLmNvbSJ9.74HnRXV3kiSjqqjP9SOuHA2u1xdvtxqCv7d_d8JGXtU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44309/api/Values",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44309",
+							"path": [
+								"api",
+								"Values"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Create Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44378/api/Auth/CreateToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Auth",
+								"CreateToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Token By Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientId\": \"string\",\r\n  \"clientSecret\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44378/api/Auth/CreateTokenByClient",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Auth",
+								"CreateTokenByClient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Token By Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44378/api/Auth/CreateTokenByRefreshToken?refreshToken=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Auth",
+								"CreateTokenByRefreshToken"
+							],
+							"query": [
+								{
+									"key": "refreshToken",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Revoke Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44378/api/Auth/RevokeRefreshToken?refreshToken=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44378",
+							"path": [
+								"api",
+								"Auth",
+								"RevokeRefreshToken"
+							],
+							"query": [
+								{
+									"key": "refreshToken",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"hakanciritt\",\r\n  \"email\": \"hakancirit@gmail.com\",\r\n  \"password\": \"Hakanciritt0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44378/api/User",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"api",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"hakancirit@gmail.com\",\r\n  \"password\": \"Hakanciritt0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44378/api/Auth/CreateToken",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"api",
+						"Auth",
+						"CreateToken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
